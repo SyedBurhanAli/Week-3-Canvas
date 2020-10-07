@@ -1,15 +1,18 @@
 function dolime() {
   var dd1 = document.getElementById("d1");
-
   dd1.style.backgroundColor = "lime";
+
+  // var canvas = dd1.getContext("2d");
+  // canvas.fillStyle = "magenta";
+  // canvas.fillRect(10, 10, 40, 40);
 }
 
 function doyellow() {
-  var dd1 = document.getElementById("d1");
-  dd1.style.backgroundColor = "white";
+  var dd2 = document.getElementById("d2");
+  dd2.style.backgroundColor = "white";
 
   //Using Canvas Context
-  var ctx = dd1.getContext("2d");
+  var ctx = dd2.getContext("2d");
   ctx.fillStyle = "yellow";
   ctx.fillRect(10, 10, 40, 40);
   ctx.fillRect(60, 10, 40, 40);
