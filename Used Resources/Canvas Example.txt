@@ -1,0 +1,80 @@
+https://www.tutorialspoint.com/html5/canvas_text_fonts.htm
+
+HTML5 Canvas - Text and Fonts
+
+HTML5 canvas provides capabilities to create text using different font and text properties listed below −
+
+Sr.No.	Property and Description
+1	
+font [ = value ]
+
+This property returns the current font settings and can be set, to change the font.
+
+2	
+textAlign [ = value ]
+
+This property returns the current text alignment settings and can be set, to change the alignment. The possible values are start, end, left, right, and center.
+
+3	
+textBaseline [ = value ]
+
+This property returns the current baseline alignment settings and can be set, to change the baseline alignment. The possible values are top, hanging, middle , alphabetic, ideographic and bottom.
+
+4	
+fillText(text, x, y [, maxWidth ] )
+
+This property fills the given text at the given position indicated by the given coordinates x and y.
+
+5	
+strokeText(text, x, y [, maxWidth ] )
+
+This property strokes the given text at the given position indicated by the given coordinates x and y.
+
+Example
+Following is a simple example which makes use of above mentioned attributes to draw a text −
+
+<!DOCTYPE HTML>
+
+<html>
+   <head>
+   
+      <style>
+         #test {
+            width: 100px;
+            height:100px;
+            margin: 0px auto;
+         }
+      </style>
+      
+      <script type = "text/javascript">
+         function drawShape() {
+         
+            // get the canvas element using the DOM
+            var canvas = document.getElementById('mycanvas');
+            
+            // Make sure we don't execute when canvas isn't supported
+            if (canvas.getContext) {
+            
+               // use getContext to use the canvas for drawing
+               var ctx = canvas.getContext('2d');
+               
+               ctx.fillStyle = '#00F';
+               ctx.font = 'Italic 30px Sans-Serif';
+               
+               ctx.textBaseline = 'Top';
+               ctx.fillText('Hello world!', 40, 100);
+               
+               ctx.font = 'Bold 30px Sans-Serif';
+               ctx.strokeText('Hello world!', 40, 50);
+            } else {
+               alert('You need Safari or Firefox 1.5+ to see this demo.');
+            }
+         }
+      </script>
+   </head>
+   
+   <body id = "test" onload = "drawShape();">
+      <canvas id = "mycanvas"></canvas>
+   </body>
+   
+</html>
