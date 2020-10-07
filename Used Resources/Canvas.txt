@@ -8,6 +8,10 @@ Q. Which of these must you do in order to draw shapes or write text on a canvas?
 Ans. Access the context of the canvas (ctx)
 
 
+When you make the Canvas and assign width and height. Then when you work in its 'Context' 
+in 2D. So all the methods will work only inside the assign width and height.
+
+
 -----------------------------
 
 https://www.w3schools.com/html/html5_canvas.asp
