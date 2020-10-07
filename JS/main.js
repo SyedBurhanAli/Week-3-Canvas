@@ -12,6 +12,14 @@ function doOrange() {
   dd3.style.backgroundColor = "orange";
 }
 
+function doPurple() {
+  var canvas = document.getElementById("d2");
+
+  var context = canvas.getContext("2d");
+  context.clearRect(0, 0, canvas.width, canvas.height);
+  canvas.style.backgroundColor = "purple";
+}
+
 function doyellow() {
   var dd2 = document.getElementById("d2");
   dd2.style.backgroundColor = "white";
