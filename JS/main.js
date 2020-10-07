@@ -7,6 +7,11 @@ function dolime() {
   // canvas.fillRect(10, 10, 40, 40);
 }
 
+function doOrange() {
+  var dd3 = document.getElementById("d2");
+  dd3.style.backgroundColor = "orange";
+}
+
 function doyellow() {
   var dd2 = document.getElementById("d2");
   dd2.style.backgroundColor = "white";
