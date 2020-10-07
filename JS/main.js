@@ -36,8 +36,8 @@ function doyellow() {
   ctx.fillRect(60, 10, 40, 40);
 
   ctx.fillStyle = "black"; //Text color
-  ctx.font = "30px Arial"; //Text font
-  ctx.fillText("Hello", 10, 80); //Writing Text
+  ctx.font = "bold 30px Arial"; //Text font
+  ctx.fillText("Hello", 10, 80); //This property fills the given text at the given position indicated by the given coordinates x and y.
 }
 
 // function doyellow() {
